@@ -1,0 +1,152 @@
+/*BREAKPOINTS MEASURES: mobile: [320 - 640]px / tablet: [642 - 960]px / desktop [961 - 1200]px */
+
+body{
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    /* max-width: 1200px; */
+}
+
+header, section, footer{
+    background-color: black;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.groups{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; 
+}
+
+.optionsGroups{
+    height: 20px;
+    margin:10px;
+}
+
+header > div{
+    background-color: violet;  
+}
+
+.optionsHeader{
+    background-color: orange;
+}
+
+nav{
+    background-color: coral;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+nav > div{
+    background-color: red;
+}
+
+section{
+    background-color: darkmagenta;
+}
+
+.sectionGroup1{
+    background-color: deepskyblue;
+}
+
+.sectionGroup1 > div {
+    background-color: blue; 
+}
+
+.sectionGroup2{
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+.sectionGroup2 > div{
+    background-color: coral;
+}
+
+#box9{
+    background-color: beige;
+}
+
+footer > div{
+    height: 20px;
+    background-color: deepskyblue;
+}
+
+/********************************************** RESPONSIVE @ media query **********************************************/
+/* TABLET SIZE */
+@media only screen and (min-width: 641px) {
+    .groupOneHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .groupOneHeader > div{
+        width: 20%;
+    }
+
+    .groupOneHeader > div:nth-of-type(2){
+        width: 60%;
+    }
+
+    #boxes5_6, #boxes7_8{
+        width: 50%;
+    }
+
+    .sectionContainer{
+        display: flex;
+        flex-wrap:wrap
+    } 
+
+    #containerBox9{
+        width: 100%;
+    }
+    
+    .sectionGroup2{
+        background-color: red;
+    }
+
+    .sectionGroup2 > div{
+        background-color: greenyellow;
+    }
+
+    footer{
+        background-color: cyan;
+    }
+
+    footer > div{
+        background-color: orangered;
+    }  
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 961px) {
+    section{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    .sectionContainer{
+        width: 70%;
+    }
+
+    .sectionGroup2{
+        background-color: fuchsia;
+        width: 30%;
+        margin-top: 0px;
+    }
+
+    footer{
+        background-color: orange;
+    }
+
+    footer > div{
+        background-color: greenyellow;
+    }
+}
+
+
+
+
+
